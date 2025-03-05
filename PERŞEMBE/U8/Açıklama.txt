@@ -1,0 +1,5 @@
+İşlem Basamakları:
+1- Modül sayfa 176 örnekten yardım alabilirsiniz.
+2- 5 adet resim eklenecek.
+3- Div ve resimlerin Boyutları: 700 X 400 px
+4- Buttonlar tıklanınca resimler değişecektir.(zIndex değerini değiştiriniz)

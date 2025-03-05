@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resim Galerisi</title>
+    <style>
+        body{background-color: orange;}
+        #galeri{ position: relative; width:700px; height: 400px; margin-bottom:10px; }
+        img{ width:700px; height: 400px; position: absolute; left:0px; right: 0px; }
+    </style>
+</head>
+<body>
+    <div id="galeri">
+        <img src="Resimler/gunBatimi.jpg" id="resim1">
+        <img src="Resimler/kahveBilgisayar.jpg" id="resim2" >
+        <img src="Resimler/kumsal.jpg" id="resim3">
+        <img src="Resimler/araba.jpg" id="resim4">
+        <img src="Resimler/Ankara.jpg" id="resim5">
+    </div>
+    <div>
+        <input type="button" onclick="resmiGoster1()" value="Gün Batımı">
+        <input type="button" onclick="resmiGoster2()" value="Bilgisayar Kahve">
+        <input type="button" onclick="resmiGoster3()" value="Kumsal">
+        <input type="button" onclick="resmiGoster4()" value="Araba">
+        <input type="button" onclick="resmiGoster5()" value="Ankara">
+    </div>
+    
+    <script>
+        function resmiGoster1(){
+            document.getElementById("resim1").style.zIndex=2;
+            document.getElementById("resim2").style.zIndex=1;
+            document.getElementById("resim3").style.zIndex=1;
+            document.getElementById("resim4").style.zIndex=1;
+            document.getElementById("resim5").style.zIndex=1;
+        }
+        function resmiGoster2(){
+            document.getElementById("resim1").style.zIndex=1;
+            document.getElementById("resim2").style.zIndex=2;
+            document.getElementById("resim3").style.zIndex=1;
+            document.getElementById("resim4").style.zIndex=1;
+            document.getElementById("resim5").style.zIndex=1;
+        }
+        function resmiGoster3(){
+            document.getElementById("resim1").style.zIndex=1;
+            document.getElementById("resim2").style.zIndex=1;
+            document.getElementById("resim3").style.zIndex=3;
+            document.getElementById("resim4").style.zIndex=1;
+            document.getElementById("resim5").style.zIndex=1;
+        }
+        function resmiGoster4(){
+            document.getElementById("resim1").style.zIndex=1;
+            document.getElementById("resim2").style.zIndex=1;
+            document.getElementById("resim3").style.zIndex=1;
+            document.getElementById("resim4").style.zIndex=2;
+            document.getElementById("resim5").style.zIndex=1;
+        }
+        function resmiGoster5(){
+            document.getElementById("resim1").style.zIndex=1;
+            document.getElementById("resim2").style.zIndex=1;
+            document.getElementById("resim3").style.zIndex=1;
+            document.getElementById("resim4").style.zIndex=1;
+            document.getElementById("resim5").style.zIndex=2;
+        }
+    </script>
+</body>
+</html>

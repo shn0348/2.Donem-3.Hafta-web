@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Formlardan Veri Alma Ve Yazdırma </title>
+    
+</head>
+<body>
+    <H5>Js Formlardan Veri Alma ve Yazdırma (4 işlem)</H5>
+    <form method="get">
+        1. sayı <input type="text" name="" id="sayi1"> <br><br>
+        2. sayı <input type="text" name="" id="sayi2"> <br><br>
+        <button type="button" onclick="topla()">Topla</button>
+        <button type="button" onclick="carp()">Çarp</button>
+        <button type="button" onclick="bol()">Böl</button>
+        <button type="button" onclick="ortalama()">Ortalama</button>
+        <button type="button" onclick="kalan()">Kalan</button>
+        <button type="button" onclick="mesaj()">Mesaj Göster</button>
+    </form>
+    <h3>İşlem Sonucu</h3>
+    <p id="pSonuc">İşlem sonucunu buraya yazdır paragraf</p>
+    <script>
+        var sonuc=0;
+        
+        function topla(){  
+            var s1 = document.getElementById('sayi1').value;
+            var s2 = document.getElementById('sayi2').value;          
+            sonuc=Number(s1) + Number(s2);        
+            document.getElementById('pSonuc').innerText=sonuc;
+        }
+        function carp(){
+            var s1 = document.getElementById('sayi1').value;
+            var s2 = document.getElementById('sayi2').value;
+            sonuc=Number(s1) * Number(s2);        
+            document.getElementById('pSonuc').innerText=sonuc;
+        }
+        function bol(){
+            var s1 = document.getElementById('sayi1').value;
+            var s2 = document.getElementById('sayi2').value;
+            sonuc=Number(s1) / Number(s2);        
+            document.getElementById('pSonuc').innerText=sonuc;
+        }  
+        function ortalama(){
+            var s1 = document.getElementById('sayi1').value;
+            var s2 = document.getElementById('sayi2').value;
+            sonuc=(Number(s1)+Number(s2))/2;        
+            document.getElementById('pSonuc').innerText=sonuc;
+        } 
+        function kalan(){
+            var s1 = document.getElementById('sayi1').value;
+            var s2 = document.getElementById('sayi2').value;
+            sonuc=Number(s1) % Number(s2);        
+            document.getElementById('pSonuc').innerText=sonuc;
+        } 
+        function mesaj(){
+            document.getElementById('sayi1').value="Merhaba";
+            document.getElementById('sayi2').value="11-C";   
+            document.getElementById('pSonuc').innerText="Mesaj Gösterildi."         
+        } 
+    </script>
+    
+</body>
+</html>

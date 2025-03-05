@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Formlardan Veri Alma Ve Yazdırma </title>
+    <link rel="stylesheet" href="toastr.min.css">
+</head>
+<body>
+    <H5>Js Formlardan Veri Alma ve Yazdırma (4 işlem)</H5>
+    <button type="button" onclick="mesajYazdir()">Mesaj Göster</button>
+    <button type="button" onclick="mesajYazdir2()">Mesaj Göster 2</button>
+    <button type="button" onclick="mesajYazdir3()">Mesaj Göster 2</button>
+  
+
+    <script>
+       function mesajYazdir(){
+            toastr.success('İşlem başarılı!', 'Başarılı');
+       }
+
+       function mesajYazdir2(){
+            toastr.warning('Dikkat edin!', 'Eksik metin girişi');
+       }
+
+       function mesajYazdir3(){
+            toastr.error('İşlem hatalı!', 'Hatalı');
+       }
+    </script>
+
+     <script src="jquery.min.js"></script>
+     <script src="toastr.min.js"></script>
+</body>
+</html>

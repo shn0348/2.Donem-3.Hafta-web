@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toastr Mesajları </title>
+    <link rel="stylesheet" href="toastr.min.css">
+</head>
+<body>
+    <H5>Toastr Mesajları-2</H5>
+    <button type="button" onclick="Yazdir1()">1. Toastr</button>
+    <button type="button" onclick="Yazdir2()">2. Toastr</button>
+    <button type="button" onclick="Yazdir3()">3. Toastr</button>
+    <button type="button" onclick="Yazdir4()">4. Toastr</button>
+    <button type="button" onclick="Yazdir5()">5. Toastr</button>
+     <script>
+       function Yazdir1(){
+            toastr.success('Yorum yapıldı.', 'Başarılı İşlem');
+       }              
+       function Yazdir2(){
+            toastr.info('Mesaj görüldü.', 'Bilgilendirme');
+       }    
+       function Yazdir3(){
+            toastr.error('Kullanıcı bulunamadı.', 'Hatalı İşlem');
+       } 
+       function Yazdir4(){
+            toastr.warning('Şifrenizde büyük harf olmalıdır.', 'Dikkat edin !');
+       } 
+       function Yazdir5(){
+            toastr.success('Toastr mesajı uygulaması');
+       } 
+    </script>
+
+     <script src="jquery.min.js"></script>
+     <script src="toastr.min.js"></script>
+</body>
+</html>

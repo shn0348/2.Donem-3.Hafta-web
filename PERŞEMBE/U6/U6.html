@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Parametresiz Basit Fonksiyonlar</title>
+    
+</head>
+<body>
+    
+    <div id="kutu" style="width: 100px;height: 100px;background-color: blue;"></div><br>
+   <button type="button" onclick="boyutlandir1()">200X200 Sarı</button>
+   <button type="button" onclick="boyutlandir2()">500X500 Kırmızı</button>
+   <button type="button" onclick="boyutlandir3()">800X800 Yeşil</button>
+    <script>
+        function boyutlandir1(){
+            document.getElementById("kutu").style.width="200px";
+            document.getElementById("kutu").style.height="200px";
+            document.getElementById("kutu").style.backgroundColor="yellow";
+        }
+        function boyutlandir2(){
+            document.getElementById("kutu").style.width="500px";
+            document.getElementById("kutu").style.height="500px";
+            document.getElementById("kutu").style.backgroundColor="red";
+        }
+        function boyutlandir3(){
+            document.getElementById("kutu").style.width="800px";
+            document.getElementById("kutu").style.height="800px";
+            document.getElementById("kutu").style.backgroundColor="green";
+        }
+    </script>
+</body>
+</html>
